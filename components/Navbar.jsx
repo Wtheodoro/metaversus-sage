@@ -1,9 +1,27 @@
-'use client';
+// user client is for next js 13.
+// https://beta.nextjs.org/docs/rendering/server-and-client-components
+'use client'
+
+import { motion } from 'framer-motion'
+import styles from '../styles'
+import { navVariants } from '../utils/motion'
 
 const Navbar = () => (
-  <nav>
-    navbar
-  </nav>
-);
+  <motion.nav
+    variants={navVariants}
+    initial='hidden'
+    whileInView='show'
+    className={`${styles.xPaddings} py-8 relative`}
+  >
+    <div className='absolute w-[50%] inset-0' />
+    <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}>
+      <img src='/search.svg' alt='search' className='w-6 h-6 object-contain' />
+      <h2 className='font-extrabold text-2xl leading-8 text-white'>
+        METAVERSUS
+      </h2>
+      <img src='/menu.svg' alt='menu' className='w-6 h-6 object-contain' />
+    </div>
+  </motion.nav>
+)
 
-export default Navbar;
+export default Navbar
