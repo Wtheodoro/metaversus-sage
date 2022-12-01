@@ -1,1 +1,0 @@
-self.__RSC_CSS_MANIFEST={"__entry_css__":{"/Users/walison/Code/study/metaversus-sage/app/page":["/Users/walison/Code/study/metaversus-sage/styles/globals.css"]},"/Users/walison/Code/study/metaversus-sage/app/layout.js":["/Users/walison/Code/study/metaversus-sage/styles/globals.css"]}
